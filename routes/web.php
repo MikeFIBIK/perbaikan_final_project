@@ -43,7 +43,7 @@ Route::get('/pemesanan', function () {
     return view('pemesanan');
 });
 
-Route::get('/pembayaran', function () {
+Route::get('pemesanan/pembayaran', function () {
     return view('pembayaran');
 });
 
@@ -57,6 +57,10 @@ Route::get('/admin/pesanan', function () {
 
 Route::get('/admin/listpaket', function () {
     return view('listpaket');
+});
+
+Route::get('/admin/tgl_tutup', function () {
+    return view('tgl_tutup');
 });
 
 //backend

@@ -20,17 +20,17 @@
     }
     .sidebar{
         position: fixed;
-        left: 0 !important;;
-        top: 0 !important;;
+        left: 0;
+        top: 0;
         height: 100%;
         width: 78px;
         background: #386A2B;
-        padding: 6px 14px !important;;
+        padding: 6px 14px ;
         z-index: 99;
         transition: all 0.5s ease;
 
-        background-color: aquamarine;
-        border-style: solid;
+        /* background-color: aquamarine;
+        border-style: solid; */
     }
 
     .sidebar i{
@@ -38,11 +38,11 @@
         height: 60px;
         min-width: 50px;
         font-size: 28px;
-        text-align: center !important;;
+        text-align: center;
         line-height: 60px;
 
-        background-color: gray;
-        border-style: dotted;
+        /* background-color: gray;
+        border-style: dotted; */
     }
     .sidebar li{
         position: relative;
@@ -79,12 +79,12 @@
         width: 100%;
         text-decoration: none;
         border-radius: 12px;
-        align-items: center !important;;
+        align-items: center ;
         transition: all 0.4s ease;
-        margin: 0px !important;
+        margin: 0px;
         
-        background-color: yellow;
-        border-style: dotted;
+        /* background-color: yellow;
+        border-style: dotted; */
     }
     .sidebar li a:hover, .nav-link.active{
         background: #FFF;
@@ -114,14 +114,14 @@
     }
     
     </style>
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     
 </head>
 
 <body>
   <div class="sidebar">
     <a class="center" href="../home" style="margin: 10% 0% 50% 0%">
-        <img src="../assets/logo/agrologo.png" width=90%/>
+        <img src="{{url('../assets/logo/agrologo.png')}}" width=90%/>
     </a>
   
     <!-- <ul class="">
@@ -151,6 +151,12 @@
         <i class='bx bx-food-menu'></i>
        </a>
        <span class="navname">Paket</span>
+     </li>
+      <li class="nav-item">
+       <a class="" href="{{url('admin/tgl_tutup')}}">
+        <i class='bx bx-calendar'></i>
+       </a>
+       <span class="navname">Tgl Tutup</span>
      </li>
     </ul>
 

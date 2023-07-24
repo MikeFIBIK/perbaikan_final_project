@@ -167,6 +167,7 @@
         </div>
     </form>
 
+    
     <script>
         tglkunjung.min = new Date().toISOString().slice(0, -14);
         
@@ -176,16 +177,7 @@
         tglkunjung.setAttribute('max', maxDateFormatted);
     </script>
 
-    <script>
-        function onlyNumberKey(evt) {
-             
-            // Only ASCII character in that range allowed
-            var ASCIICode = (evt.which) ? evt.which : evt.keyCode
-            if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57))
-                return false;
-            return true;
-        }
-    </script>
+    <script defer src="{{url('./assets/js/num_only.js')}}"></script>
 
 </body>
 </html>

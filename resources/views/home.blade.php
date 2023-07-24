@@ -25,8 +25,6 @@
       font-size: 28px;
       font-weight: bold;
     }
-    .container p{
-    }
     .fstyle{
       font-size: 20px
     }
@@ -65,7 +63,7 @@
       margin-bottom: 3%;
     }
     .grid-item{
-      /* padding: 3%; */
+      padding: 3%;
     }
     .grid-jam{
       display: grid;

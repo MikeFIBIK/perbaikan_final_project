@@ -19,7 +19,7 @@ return new class extends Migration
             $table->decimal ('harga', 9, 2);
             $table->tinyInteger ('minimal');
             $table->string ('foto')->nullable();
-            $table->tinyInteger ('status');
+            $table->boolean('status')->default(1);
             $table->tinyInteger ('id_kategori');
         });
     }

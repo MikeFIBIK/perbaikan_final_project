@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <style>
     .table{
       table-layout: fixed;
@@ -33,15 +31,32 @@
     <div class="text">
       List Paket
     </div>
-      <div class="center">
-        <div class="tablebase">
-          <div class="center">
+    <div class="center">
+      <div class="tablebase">
+        <div class="center">
+          <div>
             @yield('content')
+            @include('utility/pesan/pesan_error')
           </div>
+        </div>
 
       </div>
     </div>
     
   </section>
+
+  <script defer src="{{url('./assets/js/num_only.js')}}"></script>
+
+  <script>
+document.addEventListener('DOMContentLoaded', e => {
+for (let checkbox of document.querySelectorAll('input[type=checkbox]')) {
+    checkbox.value = checkbox.checked ? 1 : 0;
+    checkbox.addEventListener('change', e => {
+            e.target.value = e.target.checked ? 1 : 0;
+       });
+    }
+});
+  </script>
+
 </body>
 </html>

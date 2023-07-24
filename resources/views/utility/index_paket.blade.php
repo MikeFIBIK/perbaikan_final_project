@@ -1,16 +1,17 @@
 @extends('listpaket')
 
 @section('content')
-    <a href="listpaket/create" class="btn btn-primary">Buat</a>
+    <a href="listpaket/create" class="btn btn-primary">Buat Paket</a>
     <table class="table">
         <thead>
             <tr>
-                <th>Nama_paket</th>
+                <th>Nama paket</th>
                 <th>Detail</th>
                 <th>Harga</th>
                 <th>Minimal</th>
                 <th>Gambar</th>
                 <th>Status</th>
+                <th>Kategori</th>
             </tr>
         </thead>
         <tbody>
@@ -22,6 +23,7 @@
                     <td>{{ $item->minimal }}</td>
                     <td>{{ $item->foto }}</td>
                     <td>{{ $item->status }}</td>
+                    <td>{{ $item->id_kategori }}</td>
                 </tr>
             @endforeach
         </tbody>
