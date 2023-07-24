@@ -63,9 +63,12 @@ Route::get('/admin/tgl_tutup', function () {
     return view('tgl_tutup');
 });
 
+
+
 //backend
 
 Route::resource('admin/listpaket', paketController::class);
+Route::resource('admin/listpaket-new', paketController::class);
 
 // Route::get('paket', [paketController::class, 'index']);
-// Route::get('paket/{id}', [paketController::class, 'detail'])->where('id', '[0-9]+'); 
+// Route::get('paket/{id}', [paketController::class, 'detail'])->where('id', '[0-9]+');

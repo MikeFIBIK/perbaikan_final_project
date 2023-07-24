@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <style>
     .table{
       table-layout: fixed;
@@ -11,7 +11,7 @@
     .table tr, .table td{
       padding: 1% 3%;
       max-width: 20%;
-      
+
       border-style: dotted;
     }
     .harga{
@@ -22,7 +22,7 @@
       word-wrap: break-word;
       max-width:50px;
     }
-    
+
   </style>
 </head>
 
@@ -42,7 +42,7 @@
 
       </div>
     </div>
-    
+
   </section>
 
   <script defer src="{{url('./assets/js/num_only.js')}}"></script>

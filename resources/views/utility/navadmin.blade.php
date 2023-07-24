@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- <link href="{{ url('./assets/css/style.css') }}" rel="stylesheet" type="text/css" /> -->
-    
+
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
     *{
@@ -16,7 +16,7 @@
         padding: 0;
         box-sizing: border-box;
         font-family: "Poppins" , sans-serif;
-        
+
     }
     .sidebar{
         position: fixed;
@@ -82,7 +82,7 @@
         align-items: center ;
         transition: all 0.4s ease;
         margin: 0px;
-        
+
         /* background-color: yellow;
         border-style: dotted; */
     }
@@ -95,7 +95,7 @@
         transition: all 0.5s ease;
         color: #11101D;
     }
-        
+
     .content{
         position: relative;
         min-height: 100vh;
@@ -112,10 +112,10 @@
         font-weight: 500;
         margin: 18px
     }
-    
+
     </style>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
+
 </head>
 
 <body>
@@ -123,11 +123,11 @@
     <a class="center" href="../home" style="margin: 10% 0% 50% 0%">
         <img src="{{url('../assets/logo/agrologo.png')}}" width=90%/>
     </a>
-  
+
     <!-- <ul class="">
       <li class="">
         <a class="" href="pesanan">
-            <i class='bx bx-message-square-error'></i>  
+            <i class='bx bx-message-square-error'></i>
         </a>
         <span class="navname">Pesanan</span>
       </li>
@@ -142,7 +142,7 @@
     <ul class="nav-list">
       <li class="nav-item">
         <a class="nav-link" href="pesanan">
-            <i class='bx bx-message-square-error'></i>  
+            <i class='bx bx-message-square-error'></i>
         </a>
         <span class="navname">Pesanan</span>
       </li>
@@ -161,13 +161,13 @@
     </ul>
 
   </div>
-  <!-- <section class="content">    
+  <!-- <section class="content">
       <div class="text">Dashboard</div>
   </section> -->
 
     <script>
     // const links = document.querySelectorAll('.nav-link');
-        
+
     //     if (links.length) {
     //       links.forEach((link) => {
     //         link.addEventListener('click', (e) => {

@@ -15,7 +15,11 @@ class paketController extends Controller
     {
         $data = paket::all();
         $data = paket::orderBy('id', 'asc')->get();
-        return view('utility/index_paket')->with('data', $data);
+        // CHANGED BY FEBRY
+        // return view('utility/index_paket')->with('data', $data);
+
+        return view('admin-panels.package-list.index')->with('data', $data);
+        // END CHANGED BY FEBRY
     }
 
     /**
@@ -23,7 +27,10 @@ class paketController extends Controller
      */
     public function create()
     {
-        return view('utility/create');
+        // CHANGED BY FEBRY
+        //return view('utility/create');
+        return view('admin-panels.package-list.create');
+        // END CHANGED BY FEBRY
     }
 
     /**
@@ -56,7 +63,10 @@ class paketController extends Controller
             'harga' => $request->input('harga'),
             'minimal' => $request->input('minimal_p'),
             'detail' => $request->input('detail'),
-            'status' => $request->input('status'),
+            // CHANGED BY FEBRY
+            // 'status' => $request->input('status'),
+            'status' => (!empty($request->input('status')) ? 1 : 0),
+            // END CHANGED BY FEBRY
             'id_kategori' => $request->input('id_kategori')
             // 'foto' => $request->input('foto')
         ];
